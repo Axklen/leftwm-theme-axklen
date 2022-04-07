@@ -11,17 +11,17 @@
 # create an account on this website
 # create an api key (free)
 # LANG included thanks to krive001 on discord
+# slightly edited by axklen
 
+# INFO: create a file named openweatherAPI.py with your API_KEY in it
+# API_KEY = "your_key_here"
 from openweatherAPI import API_KEY
 import requests
 
 CITY = "2950159"
 UNITS = "Metric"
 UNIT_KEY = "C"
-#UNIT_KEY = "F"
 LANG = "de"
-#LANG = "nl"
-#LANG = "hu"
 
 REQ = requests.get("http://api.openweathermap.org/data/2.5/weather?id={}&lang={}&appid={}&units={}".format(CITY, LANG,  API_KEY, UNITS))
 try:
