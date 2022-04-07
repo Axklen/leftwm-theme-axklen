@@ -12,11 +12,10 @@
 # create an api key (free)
 # LANG included thanks to krive001 on discord
 
-
+from openweatherAPI import API_KEY
 import requests
 
 CITY = "2950159"
-API_KEY = "8b0698e3059e16178b2453e293a4125c"
 UNITS = "Metric"
 UNIT_KEY = "C"
 #UNIT_KEY = "F"
